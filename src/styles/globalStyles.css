@@ -38,7 +38,7 @@ body {
   background-color: var(--color-grey-9);
 }
 
-.container {
+.main__container {
   width: var(--container);
   max-width: 100%;
   padding: 0 1rem;
