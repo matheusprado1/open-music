@@ -19,20 +19,7 @@
     </header>
     <div class="category__container">
       <h2 class="category__title">Gênero Musical</h2>
-      <ul class="category__list">
-        <li class="category__item">Todos</li>
-        <li class="category__item">Pop</li>
-        <li class="category__item">MPB</li>
-        <li class="category__item">Forró</li>
-        <li class="category__item">Samba</li>
-        <li class="category__item">Baião</li>
-        <li class="category__item">Rap</li>
-        <li class="category__item">Hip-Hop</li>
-        <li class="category__item">Rock</li>
-        <li class="category__item">Reggae</li>
-        <li class="category__item">Country</li>
-        <li class="category__item">Gospel</li>
-      </ul>
+      <ul class="category__list" id="filterCategory"></ul>
     </div>
     <div class="set-price__container">
       <div class="set-price__header">
@@ -43,62 +30,16 @@
     </div>
     <div class="found__container">
       <h3 class="found__title">Álbuns Encontrados</h3>
-      <div class="albuns__container">
-        <div class="found__album">
-          <div class="album__container">
-            <img src="./src/assets/img/1.jpg" class="album__image"></img>
-            <div class="tags__container">
-              <span class="album__tag">Scalene</span>
-              <span class="album__tag">2017</span>
-            </div>
-            <p class="album__title">Magnetite</p>
-            <span class="album__price">R$ 70.00</span>
-            <button class="album__purchase">Comprar</button>
-          </div>
-        </div>
-        <div class="found__album">
-          <div class="album__container">
-            <img src="./src/assets/img/1.jpg" class="album__image"></img>
-            <div class="tags__container">
-              <span class="album__tag">Scalene</span>
-              <span class="album__tag">2017</span>
-            </div>
-            <p class="album__title">Magnetite</p>
-            <span class="album__price">R$ 70.00</span>
-            <button class="album__purchase">Comprar</button>
-          </div>
-        </div>
-        <div class="found__album">
-          <div class="album__container">
-            <img src="./src/assets/img/1.jpg" class="album__image"></img>
-            <div class="tags__container">
-              <span class="album__tag">Scalene</span>
-              <span class="album__tag">2017</span>
-            </div>
-            <p class="album__title">Magnetite</p>
-            <span class="album__price">R$ 70.00</span>
-            <button class="album__purchase">Comprar</button>
-          </div>
-        </div>
-        <div class="found__album">
-          <div class="album__container">
-            <img src="./src/assets/img/1.jpg" class="album__image"></img>
-            <div class="tags__container">
-              <span class="album__tag">Scalene</span>
-              <span class="album__tag">2017</span>
-            </div>
-            <p class="album__title">Magnetite</p>
-            <span class="album__price">R$ 70.00</span>
-            <button class="album__purchase">Comprar</button>
-          </div>
-        </div>
+      <div class="albuns__container" id="app">
+
       </div>
     </div>
     </div>
   </main>
-  <script src="./src/scripts/theme.js"></script>
-  <script src="./src/scripts/productsData.js"></script>
-  <script src="./src/scripts/index.js"></script>
+  <script type="module" src="./src/scripts/theme.js"></script>
+  <script type="module" src="./src/scripts/productsData.js"></script>
+  <script type="module" src="./src/scripts/categoryButtons.js"></script>
+  <script type="module" src="./src/scripts/index.js"></script>
 </body>
 
 </html>
