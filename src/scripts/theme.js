@@ -1,3 +1,5 @@
+import { renderCategoryButtons } from "./categoryButtons.js";
+
 const body = document.body;
 const icon = document.querySelector("#theme");
 const theme = "dark-mode";
@@ -50,4 +52,6 @@ const themePreferenceAnalysis = () => {
   }
   themeChangeIcon(icon);
 }
+
+renderCategoryButtons();
 themePreferenceAnalysis();
