@@ -12,6 +12,12 @@
   font-weight: 600;
 }
 
+.header__theme {
+  color: var(--color-grey-2);
+  font-size: var(--font-2);
+  font-weight: 900;
+}
+
 .category__container {
   display: flex;
   flex-direction: column;
