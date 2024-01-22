@@ -36,11 +36,18 @@ body {
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-grey-9);
+  cursor: default;
 }
 
-.container {
+body.dark-mode {
+  background-color: var(--color-grey-0);
+  color: var(--color-grey-8);
+}
+
+.main__container {
   width: var(--container);
   max-width: 100%;
   padding: 0 1rem;
   margin: 0 auto;
 }
+
