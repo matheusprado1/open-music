@@ -1,18 +1,10 @@
-import { products } from "./productsData.js";
+import { applyCurrentFilter } from "./filter.js";
+import { toggleThemeForElements } from "./theme.js";
+import { darkMode } from "./theme.js";
+
 const app = document.querySelector("#app");
 
-export const state = initialValue => {
-
-  let value = initialValue;
-
-  const getValue = () => value;
-
-  const setValue = newValue => value = newValue;
-
-  return [getValue, setValue];
-}
-
-const [albuns, setAlbuns] = state(products);
+document.querySelector('.category__item[data-id="0"]').classList.add("button--selected");
 
 export const renderAlbuns = (array = []) => {
 
@@ -35,13 +27,21 @@ export const renderAlbuns = (array = []) => {
           <button class="purchase__button" data-id=${item.id}>Comprar</button>
         </div>
         </div>
-        
       </div>
     </div>
-    `
+    `,
     )
   })
-
+  if (darkMode) {
+    toggleThemeForElements([
+      ".content__container",
+      ".album__tag",
+      ".album__title",
+      ".album__price",
+      ".purchase__button",
+      ".found__album",
+    ])
+  }
 }
-renderAlbuns(albuns());
+
 

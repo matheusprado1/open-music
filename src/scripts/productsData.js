@@ -72,7 +72,7 @@ export const products = [
     id: 7,
   },
   {
-    title: "Racionais MC's",
+    title: "Sobrevivendo ao Inferno",
     category: 6,
     price: 30.0,
     img: "./src/assets/img/9.jpg",
@@ -126,7 +126,7 @@ export const products = [
     id: 13,
   },
   {
-    title: "Luiz Gonzaga - O Rei do Baião",
+    title: "O Rei do Baião",
     category: 5,
     price: 40.0,
     img: "./src/assets/img/15.jpg",
@@ -135,7 +135,7 @@ export const products = [
     id: 14,
   },
   {
-    title: "Shania Twain - Come On Over",
+    title: "Come On Over",
     category: 10,
     price: 60.0,
     img: "./src/assets/img/16.jpg",

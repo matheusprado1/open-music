@@ -6,8 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="shortcut icon" type="image/png" href="./src/assets/img/musical-note.png">
   <link rel="stylesheet" href="./src/styles/globalStyles.css" />
   <link rel="stylesheet" href="./src/styles/index.css" />
+  <script defer type="module" src="./src/scripts/theme.js"></script>
+  <script defer type="module" src="./src/scripts/productsData.js"></script>
+  <script defer type="module" src="./src/scripts/categoryButtons.js"></script>
+  <script defer type="module" src="./src/scripts/filter.js"></script>
+  <script defer type="module" src="./src/scripts/slider.js"></script>
+  <script defer type="module" src="./src/scripts/index.js"></script>
   <title>Open Music</title>
 </head>
 
@@ -24,9 +31,11 @@
     <div class="set-price__container">
       <div class="set-price__header">
         <h2 class="set-price__title">Definir Preço</h2>
-        <p class="set-price__to">Até R$ 240</p>
+        <p class="set-price__to" id="sliderPrice"></p>
       </div>
-      <input class="set-price__range" type="range" name="" id="rangeInput">
+      <div class="slide__container">
+        <input class="set-price__slider" type="range" min="1" max="500" value="240" name="" id="slider">
+      </div>
     </div>
     <div class="found__container">
       <h3 class="found__title">Álbuns Encontrados</h3>
@@ -36,11 +45,6 @@
     </div>
     </div>
   </main>
-  <script type="module" src="./src/scripts/theme.js"></script>
-  <script type="module" src="./src/scripts/productsData.js"></script>
-  <script type="module" src="./src/scripts/categoryButtons.js"></script>
-  <script type="module" src="./src/scripts/filter.js"></script>
-  <script type="module" src="./src/scripts/index.js"></script>
 </body>
 
 </html>
