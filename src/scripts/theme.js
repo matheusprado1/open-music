@@ -4,17 +4,26 @@ const body = document.body;
 const icon = document.querySelector("#theme");
 const theme = "dark-mode";
 
-let darkMode = JSON.parse(localStorage.getItem(theme));
+export let darkMode = JSON.parse(localStorage.getItem(theme));
 
-const selectors = [
+export const selectors = [
   ".header__title",
   ".header__theme",
   ".category__title",
   ".category__item",
   ".set-price__title",
   ".set-price__to",
-  ".found__title"
+  ".found__title",
+  ".button--selected",
+  ".content__container",
+  ".album__tag",
+  ".album__title",
+  ".album__price",
+  ".purchase__button",
+  ".found__album",
 ];
+
+
 
 const themeChangeIcon = icon => {
   if (darkMode) {
@@ -26,11 +35,15 @@ const themeChangeIcon = icon => {
   }
 }
 
-const toggleThemeForElements = selectors => {
+export const toggleThemeForElements = selectors => {
   selectors.forEach(selector => {
     const elements = document.querySelectorAll(selector);
     elements.forEach(element => {
-      element.classList.toggle(theme);
+      if (darkMode) {
+        element.classList.add(theme);
+      } else {
+        element.classList.remove(theme);
+      }
     })
   })
 }
