@@ -81,13 +81,13 @@ const handleFilter = () => {
 
       filterButtons.forEach(button => {
         button.classList.remove("button--selected");
-        if (document.body.classList.contains("dark-mode")) { // If the body has the 'dark-mode' class, add it to all buttons
+        if (document.body.classList.contains("dark-mode")) {
           button.classList.add("dark-mode");
         }
       });
 
       button.classList.add("button--selected");
-      button.classList.remove("dark-mode"); // Remove the 'dark-mode' class from the selected button
+      button.classList.remove("dark-mode");
 
       currentFilter = id;
       applyCurrentFilter();
