@@ -1,9 +1,7 @@
 import { state } from "./state.js";
 import { renderAlbuns } from "./index.js";
 import { products } from "./productsData.js";
-import { toggleThemeForElements } from "./theme.js";
-import { selectors } from "./theme.js";
-import { darkMode } from "./theme.js";
+import { toggleThemeForElements, selectors, darkMode } from "./theme.js";
 
 const filterButtons = [...document.querySelectorAll(".category__item")];
 

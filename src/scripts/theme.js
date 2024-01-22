@@ -23,8 +23,6 @@ export const selectors = [
   ".found__album",
 ];
 
-
-
 const themeChangeIcon = icon => {
   if (darkMode) {
     icon.classList.remove("fa-moon");

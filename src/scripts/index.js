@@ -1,6 +1,4 @@
-import { applyCurrentFilter } from "./filter.js";
-import { toggleThemeForElements } from "./theme.js";
-import { darkMode } from "./theme.js";
+import { toggleThemeForElements, darkMode } from "./theme.js";
 
 const app = document.querySelector("#app");
 

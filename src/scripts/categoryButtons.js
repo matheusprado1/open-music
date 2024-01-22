@@ -1,6 +1,5 @@
 import { categories } from "./productsData.js";
 
-
 const filterCategory = document.querySelector("#filterCategory");
 
 export const renderCategoryButtons = () => {
